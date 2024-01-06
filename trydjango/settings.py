@@ -87,6 +87,12 @@ DATABASES = {
     }
 }
 
+# This code is added to add the render databases url to the project
+DATABASES = {
+	"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+# End of the added code
+
 POSTGRES_DB = os.environ.get("POSTGRES_DB") #database name
 POSTGRES_PASSWORD = os.environ.get("POSTGRES_PASSWORD") # database user password
 POSTGRES_USER = os.environ.get("POSTGRES_USER") # database username
