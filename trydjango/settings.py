@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 # Added this to import django databaseurl
-import dj-database-url
+import dj_database_url
 # End of import django databaseurl
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
